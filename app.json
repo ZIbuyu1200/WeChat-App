@@ -1,0 +1,41 @@
+{
+  "pages": [
+    
+    "Pages/index/index",
+    "Pages/about/about",
+    "Pages/timetable/timetable",
+    "Pages/morelesson/morelesson",
+    "Pages/chat/chat",
+    "Pages/historymessage/historymessage"
+  
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+    {
+      "pagePath": "Pages/index/index",
+      "text": "查询",
+      "iconPath": "icon/search.png",
+      "selectedIconPath": "icon/selectsearch.png"
+    },
+    {
+      "pagePath": "Pages/chat/chat",
+      "text": "聊天",
+      "iconPath": "icon/chat.png",
+      "selectedIconPath": "icon/selectchat.png"
+    },
+    {
+      "pagePath": "Pages/about/about",
+      "text": "关于",
+      "iconPath": "icon/about.png",
+      "selectedIconPath": "icon/selectabout.png"
+    }
+    ]
+  }
+}

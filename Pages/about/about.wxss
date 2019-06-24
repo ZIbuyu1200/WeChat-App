@@ -1,0 +1,22 @@
+.about{
+
+  height:50vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.title{ 
+  font-weight: hold;
+  font-size:60rpx
+}
+.Version{
+  height: 150vh;
+  font-size:20rpx
+}
+
+.appimage{
+  width: 375rpx;
+  height: 375rpx;
+  
+}

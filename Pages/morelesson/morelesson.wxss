@@ -1,0 +1,50 @@
+/* Pages/morelesson/morelesson.wxss */
+.top {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0rpx;
+  background-color: #d2e6b3;
+  color: #7cba23;
+}
+.top-text {
+  width: 300rpx;
+  height: 35rpx;
+  font-size:9pt;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.flex-item {
+  width: 750rpx;
+  height: 100px;
+}
+
+.kcb-item {
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.smalltext{
+  width: 450rpx;
+  height: 65rpx;
+  font-size:9pt;
+  display: flex;
+  padding-left: 50rpx;
+}
+.smalltext1{
+  width: 300rpx;
+  height: 35rpx;
+  font-size:9pt;
+  display: flex;
+  padding-left: 30rpx;
+}
+.smalltext2{
+  width: 300rpx;
+  height: 35rpx;
+  font-size:9pt;
+  display: flex;
+  padding-left: 100rpx;
+}

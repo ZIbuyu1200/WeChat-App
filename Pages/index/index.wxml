@@ -1,0 +1,36 @@
+<view class="section">
+  <view class="section__title" style='jusify-content:flex-start'>学习使我快乐，旁听使我更快乐！</view>
+  <swiper class='posts-swiper' indicator-dots='true' autoplay='true'interval='2000'>
+  <swiper-item>
+    <image class='posts-swiper-img'src='/image/11.jpg' mode='aspectFit'></image>
+  </swiper-item>
+<swiper-item>
+    <image class='posts-swiper-img'src='/image/12.jpg' mode='aspectFit'></image>
+</swiper-item>
+ <swiper-item>
+    <image class='posts-swiper-img'src='/image/13.jpg' mode='aspectFit'></image>
+  </swiper-item>
+ <swiper-item>
+    <image class='posts-swiper-img'src='/image/14.jpg' mode='aspectFit'></image>
+  </swiper-item>
+ <swiper-item>
+    <image class='posts-swiper-img'src='/image/15.jpg' mode='aspectFit'></image>
+  </swiper-item>
+ <swiper-item>
+    <image class='posts-swiper-img'src='/image/16.jpg' mode='aspectFit'></image>
+  </swiper-item>
+  </swiper>
+</view>
+<view class="section1">
+  <view class="section__title">请选择当前教学周</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：第{{array[index]}}周
+    </view>
+  </picker>
+  <navigator url="/Pages/timetable/timetable?week={{index}}">
+  <button class="button" type="primary" size='default'>
+  查询
+  </button>
+  </navigator>
+</view>

@@ -1,0 +1,9 @@
+<!--Pages/morelesson/morelesson.wxml-->
+<view class="top">
+<view wx:for="{{['课程名称','上课地点','授课教师']}}" wx:key="key" class="top-text">{{item}}</view>
+</view>
+<view wx:for="{{wlist}}"wx:key="key">
+ <view class="flex-item kcb-item" bindtap="showCardView" data-statu="open" data-index="{{index}}" style="margin-left:0;margin-top:{{(index)*95+3}}rpx; height:95rpx;background-color:{{colorArrays[index%9]}}">
+      <view class="smalltext" >{{item.kcmc}}</view><view class="smalltext1">{{item.skdd}}</view><view class="smalltext2">{{item.teacher}}</view>
+      </view>  
+</view>

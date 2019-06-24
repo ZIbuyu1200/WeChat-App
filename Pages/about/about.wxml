@@ -1,0 +1,9 @@
+
+<view class="about">
+  <view >
+    <image class="appimage" src='/image/App.jpg'></image>
+  </view>
+  <view class="title" >旁听僧</view>
+  <view class="Version">Version 0.1.4</view>
+  <view style="height:50rpx;font-size:30rpx">目前仅支持BJUT</view>
+</view>

@@ -1,0 +1,28 @@
+<!--Pages/timetable/timetable.wxml-->
+<view class="timetable">
+  <view class="top">
+  <view wx:for="{{['一','二','三','四','五','六','日']}}"wx:key="key" class="top-text">周{{item}}</view>
+</view>
+<scroll-view scroll-y="true"style="background-image: url(https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike150%2C5%2C5%2C150%2C50/sign=02abeb39ad51f3ded7bfb136f5879b7a/4034970a304e251f0a77c70ba586c9177e3e5344.jpg);background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;" class="scroll">
+  <view style="height:1200rpx;width:730rpx;display:flex;">
+    <view style="background-color:#D2E6B3;color:#7cba23;">
+      <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12]}}"wx:key="key" class="left">
+        {{item}}
+      </view>
+    </view>
+    <view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12]}}"wx:key="key">
+      <view style="width:750rpx;margin-top:{{(index+1)*100}}rpx;  position: absolute;border-bottom:1rpx solid {{index==3?'red':'lightgray'}};">
+      </view>
+    </view>
+
+    <!--课表-->
+    <view wx:for="{{wlist}}"wx:key="key">
+      <navigator url="/Pages/morelesson/morelesson?week={{item.week}}&skjc={{item.skjc}}&xqj={{item.xqj}}&skcd={{item.skcd}}">
+      <view class="flex-item kcb-item" bindtap="showCardView" data-statu="open" data-index="{{index}}" style="margin-left:{{(item.xqj-1)*100}}rpx;margin-top:{{(item.skjc-1)*100+5}}rpx;height:{{item.skcd*100-5}}rpx;background-color:{{colorArrays[index%9]}}">
+        <view class="smalltext" >{{item.kcmc}}更多</view>
+      </view>
+      </navigator>
+    </view>
+  </view>
+</scroll-view>
+</view>

@@ -1,0 +1,20 @@
+<!--Pages/morelesson/morelesson.wxml-->
+<scroll-view scroll-y="true" bindscroll="reFresh">
+  <view  class='top'>我的历史消息</view>
+    <scroll-view scroll-y="true" style='height:800px  jusify-content:center bottem:10px' wx:for-items="{{wlist}}"wx:key="key">
+      <view class="smalltext">{{item.message}}</view> <view class='smalltext1'> {{item.time}}</view>
+    </scroll-view>
+    <view >
+    </view>
+</scroll-view>
+
+
+
+
+
+
+
+
+
+
+

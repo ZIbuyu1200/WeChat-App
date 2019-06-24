@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "backgroundTextStyle":"dark",
+  "navigationBarTitleText": "留言板",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

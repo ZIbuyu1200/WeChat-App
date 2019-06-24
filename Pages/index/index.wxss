@@ -1,0 +1,30 @@
+@import "../lib/weui.wxss";
+.section{
+    height:55vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.section1{
+    height:35vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.appimage{
+  width: 375rpx;
+  height: 375rpx;
+  
+}
+.posts-swiper {
+  width: 100%;
+  height: 500rpx;
+}
+.posts-swiper-img {
+  width: 100%;
+  height: 500rpx;
+}

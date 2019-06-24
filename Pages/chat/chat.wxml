@@ -1,0 +1,22 @@
+<!--Pages/morelesson/morelesson.wxml-->
+<scroll-view scroll-y="true" bindscroll="reFresh">
+  <view class="top">-------欢迎来到实力至上主义的教室</view>
+    <scroll-view scroll-y="true" style='height:800px  jusify-content:center bottem:10px' wx:for-items="{{wlist}}"wx:key="key">
+      <view class="smalltext">{{item.message}}</view> <view class='smalltext1'> {{item.time}}</view>
+    </scroll-view>
+    <view >
+        <form bindsubmit="bindFormSubmit">
+          <textarea  maxlength='14'style=' height:100px' bindblur='bindKeyInput' placeholder="在此输入你的评论" name="textarea" />
+          <button type='primary' size='mini' style='margin-top:5px' form-type="submit"> 提交 </button>
+         </form>
+          <navigator  url="/Pages/historymessage/historymessage">
+            <button style='margin-top:5px' type="primary" size='mini'>我的历史</button>
+          </navigator>
+    </view>
+</scroll-view>
+
+
+
+
+
+
